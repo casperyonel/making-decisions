@@ -53,8 +53,8 @@ if (amysAge ===  brittanisAge){
 
 ////////// PROBLEM 4 //////////
 
-let temperature = 55
-let rain = true
+let temperature = 20
+let rain = false
 
 /*
   Using an if statement and a comparison operator, create code that will log a suggestion on what type of clothes one should wear for the day, based on the above temperature and rain.
@@ -63,16 +63,16 @@ let rain = true
 
 //CODE HERE
 
-if (temperature > 80 && rain === true){
+if (temperature >= 80 && rain === true){
   console.log("Wear a T-Shirt and take an umbrella")
-} else if (80 > temperature > 60 && rain === true) {
+} else if (temperature < 80 && temperature > 60 && rain === true) {
   console.log("Wear a rain-jacket")
-} else if (temperature <= 60) {
+} else if (temperature <= 60 && rain === true) {
   console.log("Wear a jacket and carry an umbrealla")
 } else if (temperature >= 70 && rain === false){
   console.log(`Wear some shorts but bring a hat! The sun is out and it's ${temperature} degrees!`)
 } else if (temperature < 70 && rain === false){
-  console.log(`Wear warm clothes because its only ${temperature} but dont worry about bringing anything rain related`)
+  console.log(`Wear warm clothes because its only ${temperature} but dont worry about bringing anything rain related!`)
 }
 
 ////////// PROBLEM 5 //////////
@@ -127,20 +127,6 @@ while (score < passingScore){
   score++
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ////////// INTERMEDIATE PROBLEMS //////////
 
 ////////// PROBLEM 9 //////////
@@ -152,18 +138,40 @@ while (score < passingScore){
 
 //CODE HERE
 
+let changeMyMind = false
+
+if (changeMyMind){
+  changeMyMind = false
+  // changeMyMind = !changeMyMind
+} else if (changeMyMind === false) {
+  changeMyMind = true
+//   // changeMyMind = !changeMyMind
+}
+
 ////////// PROBLEM 10 //////////
 // Try to change the value of changeMyMind (irrespective of whether it is true or false) and then console.log it's new status. It should log true. Hint: use the not operator.
 
 //CODE HERE
 
+changeMyMind = !!23
 
+console.log(changeMyMind)
 
 ////////// ADVANCED PROBLEMS //////////
 
 ////////// PROBLEM 11 //////////
 
+
 let z = 5
+
 // Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 
 //CODE HERE
+
+while (z >= 1){
+  console.log(z)
+  z--
+  if (z === z.length){
+    console.log(z)
+  }
+}
