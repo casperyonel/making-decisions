@@ -8,6 +8,14 @@
 
 //CODE HERE
 
+let lovesCode = true
+
+if(lovesCode) {
+  console.log("I love to Code!")
+} else {
+  console.log("Coding has its challenges")
+}
+
 // For problems 2-3 use the following lines of code:
 var amysAge = 29
 var brittanisAge = 34
@@ -22,6 +30,14 @@ var brittanisBirthYear = 1986
 
 //CODE HERE
 
+if (amysAge > brittanisAge){
+  console.log("Amy is older")
+} else {
+  console.log("Brittan is older")
+}
+// } else {
+//   console.log(`Amy and Brittan are the same age, their age is ${amysAge}`)
+// }
 
 ////////// PROBLEM 3 //////////
 
@@ -31,6 +47,9 @@ var brittanisBirthYear = 1986
 
 //CODE HERE
 
+if (amysAge ===  brittanisAge){
+  console.log(`They're the same age, their age is ${amysAge} `)
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -44,6 +63,17 @@ let rain = true
 
 //CODE HERE
 
+if (temperature > 80 && rain === true){
+  console.log("Wear a T-Shirt and take an umbrella")
+} else if (80 > temperature > 60 && rain === true) {
+  console.log("Wear a rain-jacket")
+} else if (temperature <= 60) {
+  console.log("Wear a jacket and carry an umbrealla")
+} else if (temperature >= 70 && rain === false){
+  console.log(`Wear some shorts but bring a hat! The sun is out and it's ${temperature} degrees!`)
+} else if (temperature < 70 && rain === false){
+  console.log(`Wear warm clothes because its only ${temperature} but dont worry about bringing anything rain related`)
+}
 
 ////////// PROBLEM 5 //////////
 
@@ -53,6 +83,9 @@ let rain = true
 
 //CODE HERE
 
+for (let i = 0; i < 10; i++){
+  console.log("Hello")
+}
 
 ////////// PROBLEM 6 //////////
 
@@ -62,6 +95,9 @@ let rain = true
 
 //CODE HERE
 
+for (let i = 1; i <= 10; i++){
+  console.log(i)
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -74,6 +110,10 @@ let rain = true
 let score = 0
 let passingScore = 7
 
+for (let i = 10; i >= 0; i--) {
+  console.log(i)
+}
+
 ////////// PROBLEM 8 //////////
 
 /*
@@ -81,6 +121,25 @@ let passingScore = 7
 */
 
 //CODE HERE
+
+while (score < passingScore){
+  console.log("Your score is not high enough")
+  score++
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ////////// INTERMEDIATE PROBLEMS //////////
 
